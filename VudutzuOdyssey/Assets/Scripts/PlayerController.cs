@@ -63,4 +63,12 @@ public class PlayerController : MonoBehaviour
             Destroy(GameObject.Find("Perso(Clone)"));
         }
     }
+
+    void OnCollisionStay2D(Collision2D col)
+    {
+        if (isMoving)
+        {
+            isMoving = false;
+        }
+    }
 }
