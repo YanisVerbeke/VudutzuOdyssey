@@ -259,7 +259,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 147532184}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6415b80b74b3e4ba4bdaa8b4efa99d1e, type: 3}
+  m_Script: {fileID: 11500000, guid: 43ef6b3d1a4ca4a86b3c7f3e01e6eda9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Canva: {fileID: 759698602}
@@ -1450,7 +1450,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 966305364}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6415b80b74b3e4ba4bdaa8b4efa99d1e, type: 3}
+  m_Script: {fileID: 11500000, guid: 43ef6b3d1a4ca4a86b3c7f3e01e6eda9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Canva: {fileID: 241894475}
@@ -1711,7 +1711,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 986598041}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6415b80b74b3e4ba4bdaa8b4efa99d1e, type: 3}
+  m_Script: {fileID: 11500000, guid: 43ef6b3d1a4ca4a86b3c7f3e01e6eda9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Canva: {fileID: 241894475}
@@ -3218,10 +3218,10 @@ RectTransform:
   m_Father: {fileID: 1791401078}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.000012159, y: 0.000002861}
-  m_SizeDelta: {x: 156.1, y: 124.69}
+  m_AnchorMin: {x: 0.418, y: 0.15252504}
+  m_AnchorMax: {x: 0.582, y: 0.84800005}
+  m_AnchoredPosition: {x: 0.000011444092, y: 0.0000038146973}
+  m_SizeDelta: {x: -1.8999939, y: -1.3099976}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1314771357
 MonoBehaviour:
@@ -3322,7 +3322,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1314771355}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6415b80b74b3e4ba4bdaa8b4efa99d1e, type: 3}
+  m_Script: {fileID: 11500000, guid: 43ef6b3d1a4ca4a86b3c7f3e01e6eda9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Canva: {fileID: 759698602}
