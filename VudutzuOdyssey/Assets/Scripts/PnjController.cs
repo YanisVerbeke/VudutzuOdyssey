@@ -6,6 +6,7 @@ using UnityEngine.UI;
 
 public class PnjController : MonoBehaviour
 {
+    public bool isMuted;
     public Text myText;
     public GameObject Panel;
     public string texte;
@@ -18,15 +19,15 @@ public class PnjController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!String.IsNullOrEmpty(texte))
-        {
-            myText.text = texte;
-        }
+            if (!String.IsNullOrEmpty(texte))
+            {
+                myText.text = texte;
+            }
     }
     void OnCollisionStay2D(Collision2D col)
     {
 
-        if (col.gameObject.name == "Player")
+        if (col.gameObject.name == "Player" && !isMuted)
         {
             Debug.Log("tedst");
             Panel.gameObject.SetActive(true);
