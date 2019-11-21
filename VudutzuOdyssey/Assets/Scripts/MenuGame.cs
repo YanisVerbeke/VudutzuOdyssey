@@ -7,27 +7,17 @@ using UnityEngine.SceneManagement;
 public class MenuGame : MonoBehaviour
 {
 
-
+    [SerializeField] private string scene;
     // Start is called before the first frame update
 
     // Update is called once per frame
-    
+
 
     public Button yourButton;
 
-    void Start()
+    public void Navigation(string scene)
     {
-    }
-
-    void Update()
-    {
-
-    }
-
-    public void TaskOnClick()
-    {
-        Debug.Log("You have clicked the button!");
-        SceneManager.LoadScene("VillageScene");
+        SceneManager.LoadScene(scene);
     }
 
     public void EndGame()

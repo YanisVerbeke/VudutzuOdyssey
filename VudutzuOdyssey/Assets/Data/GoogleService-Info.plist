@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>678850495727-65d8h4cma7e2o5pp5qfl1tnigmsm9jeh.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.678850495727-65d8h4cma7e2o5pp5qfl1tnigmsm9jeh</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCZaCRuWd2P2M65lznQF62xqnkvC6awqas</string>
+	<key>GCM_SENDER_ID</key>
+	<string>678850495727</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.google.VudutzuOdyssey</string>
+	<key>PROJECT_ID</key>
+	<string>vudutzu</string>
+	<key>STORAGE_BUCKET</key>
+	<string>vudutzu.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:678850495727:ios:52350000401ecb7219471a</string>
+	<key>DATABASE_URL</key>
+	<string>https://vudutzu.firebaseio.com</string>
+</dict>
+</plist>
