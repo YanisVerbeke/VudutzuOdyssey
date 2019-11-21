@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "678850495727",
+    "firebase_url": "https://vudutzu.firebaseio.com",
+    "project_id": "vudutzu",
+    "storage_bucket": "vudutzu.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:678850495727:android:14bbd805b78633a519471a",
+        "android_client_info": {
+          "package_name": "com.google.VudutzuOdyssey"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "678850495727-psktlv3gclbirtk1c61nhkqtei0aamuq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD8AFA0TrYXdTtibWeG3lLzi7wGKcznYKY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "678850495727-psktlv3gclbirtk1c61nhkqtei0aamuq.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "678850495727-65d8h4cma7e2o5pp5qfl1tnigmsm9jeh.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.google.VudutzuOdyssey"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
