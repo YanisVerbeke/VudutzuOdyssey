@@ -8,9 +8,15 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/Menu.unity
+    guid: b0ca87407287641e0bbe9ce4606b869c
   - enabled: 0
     path: Assets/Scenes/movScene.unity
     guid: baee81b03619f43b6bdf81b9d0de4f40
+  - enabled: 1
+    path: Assets/Scenes/FightScene.unity
+    guid: de7e049e7192340418630a57b2be2812
   - enabled: 1
     path: Assets/Scenes/VillageScene.unity
     guid: 12e424192b6d14649be08c13f18cd41f
@@ -20,4 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/2DColliderScene.unity
     guid: 6dcab7dfbd0e549cda0b7b9e553bf38e
+  - enabled: 1
+    path: Assets/Scenes/Review.unity
+    guid: 2f494a4286ade4672b56fff620fd91f1
   m_configObjects: {}
