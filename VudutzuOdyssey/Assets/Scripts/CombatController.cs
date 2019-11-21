@@ -10,11 +10,10 @@ public class CombatController : MonoBehaviour
     private Vector3 targetPosition;
     public GameObject enemy;
     public GameObject player;
-    [SerializeField] private string attaque;
+    private string attaque;
     private bool isCac= false;
-    private bool isDistance= false;
-
-    //public string attaque = "cac";
+    Character character;
+    //private bool isDistance= false;
 
     // Start is called before the first frame update
     void Start()
@@ -40,16 +39,20 @@ public class CombatController : MonoBehaviour
             }
             //attaque = "cac";
 
-            Debug.Log("l'attaque "+attaque);
+            Debug.Log(isCac+" l'attaque "+attaque);
             targetPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
             Vector3 enemyCoord = Round(enemy.transform.position);
 
             if (Round(targetPosition).x == enemyCoord.x && Round(targetPosition).y == enemyCoord.y)
             {
-                if(isCac == true)
+                if (isCac == true)
                 {
                     Debug.Log("nice");
+                    Debug.Log(character.healthPoint);
+                    character.healthPoint = 1;
+                    Debug.Log(character.healthPoint);
+
                 }
                 else if(attaque == "distance")
                 {
@@ -59,8 +62,8 @@ public class CombatController : MonoBehaviour
             }
             
             Vector3 playerCoord = Round(player.transform.position);
-            Debug.Log("position player " + playerCoord + " et le mechant "+ enemyCoord);
-            Debug.Log("LOl mdr target position " + Round(targetPosition));
+            //Debug.Log("position player " + playerCoord + " et le mechant "+ enemyCoord);
+            //Debug.Log("LOl mdr target position " + Round(targetPosition));
         }
     }
 
@@ -69,7 +72,7 @@ public class CombatController : MonoBehaviour
 
             target.x = (int)target.x ;
             target.y = (int)target.y;
-        Debug.Log("position x  " + target.x);
+        //Debug.Log("position x  " + target.x);
         return target;
     }
 

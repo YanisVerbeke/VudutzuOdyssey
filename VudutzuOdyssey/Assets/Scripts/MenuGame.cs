@@ -15,6 +15,16 @@ public class MenuGame : MonoBehaviour
 
     public Button yourButton;
 
+    void OnCollisionStay2D(Collision2D col)
+    {
+
+        if (col.gameObject.name == "Player" )
+        {
+            Debug.Log("tedst");
+            Navigation(scene);
+        }
+    }
+
     public void Navigation(string scene)
     {
         SceneManager.LoadScene(scene);
