@@ -13067,33 +13067,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &766485133 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7061473726270020396, guid: 91122fde1f0324eba8af851ac8f5704a,
-    type: 3}
-  m_PrefabInstance: {fileID: 2040627110}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &766485140
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 766485133}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 57b0e278a35534349aa1d9ecef51ad8c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  characterName: test
-  mvtSpeed: 5
-  healthPoint: 5
-  atk: 5
-  isFighting: 0
-  moveLeft: 0
-  clickAnimation: {fileID: 766485133}
 --- !u!1 &871351868
 GameObject:
   m_ObjectHideFlags: 0
@@ -114682,6 +114657,16 @@ PrefabInstance:
         type: 3}
       propertyPath: MaxY
       value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: 5212382211627676601, guid: 91122fde1f0324eba8af851ac8f5704a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -12.73
+      objectReference: {fileID: 0}
+    - target: {fileID: 5212382211627676601, guid: 91122fde1f0324eba8af851ac8f5704a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -65.99
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91122fde1f0324eba8af851ac8f5704a, type: 3}
