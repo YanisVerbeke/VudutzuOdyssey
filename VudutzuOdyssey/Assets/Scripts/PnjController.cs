@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -17,7 +18,10 @@ public class PnjController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        myText.text = texte;
+        if (!String.IsNullOrEmpty(texte))
+        {
+            myText.text = texte;
+        }
     }
     void OnCollisionStay2D(Collision2D col)
     {

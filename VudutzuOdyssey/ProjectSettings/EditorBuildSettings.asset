@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/movScene.unity
     guid: baee81b03619f43b6bdf81b9d0de4f40
   - enabled: 1
+    path: Assets/Scenes/FightScene.unity
+    guid: de7e049e7192340418630a57b2be2812
+  - enabled: 1
     path: Assets/Scenes/VillageScene.unity
     guid: 12e424192b6d14649be08c13f18cd41f
   - enabled: 1
