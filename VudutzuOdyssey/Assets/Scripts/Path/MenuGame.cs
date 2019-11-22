@@ -6,8 +6,10 @@ using UnityEngine.SceneManagement;
 
 public class MenuGame : MonoBehaviour
 {
-    public Vector3 pos1;
+    [SerializeField] private float xC;
+    [SerializeField] private float yC;
     [SerializeField] private string scene;
+    private bool HeNavigate = false;
     // Start is called before the first frame update
 
     // Update is called once per frame
@@ -15,9 +17,7 @@ public class MenuGame : MonoBehaviour
 
     public void Start()
     {
-        pos1 = GameObject.FindWithTag("PlayerFight Variant").transform.position;
-        pos1.x = 0;
-        pos1.y = 0;
+        //SetTransform(xC ,yC);
     }
 
     public Button yourButton;
@@ -25,20 +25,28 @@ public class MenuGame : MonoBehaviour
     void OnCollisionStay2D(Collision2D col)
     {
 
-        if (col.gameObject.name == "PlayerFight Variant")
+        if (col.gameObject.name == "Player" )
         {
             
             Navigation(scene);
-            pos1 = GameObject.FindWithTag("PlayerFight Variant").transform.position;
-            pos1.x = 0;
-            pos1.y = 0;
-            Debug.Log("tedst");
+            //SetTransform(xC, yC);
         }
+    }
+
+    public void SetTransform(float x, float y)
+    {
+        transform.position = new Vector3(x, y, -2.0f);
     }
 
     public void Navigation(string scene)
     {
         SceneManager.LoadScene(scene);
+        this.HeNavigate = true;
+        if (gameObject.name == "Player" && this.HeNavigate == true)
+        {
+            SetTransform(5, 5);
+            this.HeNavigate = false;
+        }
     }
 
     public void EndGame()

@@ -24,13 +24,15 @@ public class PnjController : MonoBehaviour
     {
             if (myText != null)
             {
-                myText.text = texte;
-            }
+                //myText.text = "";
+                //myText.text = texte;
+
+        }
     }
     void OnCollisionStay2D(Collision2D col)
     {
 
-        if (col.gameObject.name == "Player" && !isMuted)
+        if (col.gameObject.name == "PlayerFight Variant" && !isMuted)
         {
             Debug.Log("tedst");
             Panel.gameObject.SetActive(true);
@@ -39,7 +41,7 @@ public class PnjController : MonoBehaviour
 
     private void OnCollisionExit2D(Collision2D col)
     {
-        if (col.gameObject.name == "Player")
+        if (col.gameObject.name == "PlayerFight Variant")
         {
             Debug.Log("bye");
             Panel.gameObject.SetActive(false);
