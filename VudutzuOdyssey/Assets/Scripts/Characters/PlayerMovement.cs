@@ -4,8 +4,9 @@ using System.Collections.Generic;
 
 public static class PlayerMovement
 {
-    private static bool isMoving;
+    public static bool isMoving;
     private static Vector3 targetPosition;
+    public static Vector2 direction;
 
     //Cette fonction permet le déplacement du personnage hors combat
     public static void UserMovement(float speed, GameObject clickAnimation)
@@ -14,7 +15,10 @@ public static class PlayerMovement
         {
             
             targetPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            targetPosition.z = clickAnimation.transform.position.z;
+            if (clickAnimation != null)
+            {
+                targetPosition.z = clickAnimation.transform.position.z;
+            }
 
             //Le repositionnement de la caméra permet le non-tremblement de celle-ci lors d'une collision
 
@@ -48,10 +52,41 @@ public static class PlayerMovement
         //Si le personnage est en mouvement, alors on va le déplacer vers la position voulue
         if (isMoving)
         {
-            clickAnimation.transform.position = Vector3.MoveTowards(clickAnimation.transform.position, targetPosition, speed * Time.deltaTime);
-        }
+            direction = Vector2.zero;
+            if (clickAnimation != null)
+            {
+                if (targetPosition.y > clickAnimation.transform.position.y)
+                {
+                    direction += Vector2.up;
+                }
+                if (targetPosition.x < clickAnimation.transform.position.x)
+                {
+                    direction += Vector2.left;
+                }
+                if (targetPosition.y < clickAnimation.transform.position.y)
+                {
+                    direction += Vector2.down;
+                }
+                if (targetPosition.x > clickAnimation.transform.position.x)
+                {
+                    direction += Vector2.right;
+                }
 
+                clickAnimation.transform.position = Vector3.MoveTowards(clickAnimation.transform.position, targetPosition, speed * Time.deltaTime);
+            }
+        }
+        Debug.Log("1 : " + targetPosition);
+        Debug.Log("2 : " + clickAnimation.transform.position);
         //Quand le personnage atteint la position voulue, isMoving repasse à false
-        isMoving &= targetPosition != clickAnimation.transform.position;
+        if (clickAnimation != null)
+        {
+            isMoving &= targetPosition != clickAnimation.transform.position;
+        }
+    }
+
+    public static Vector2 GetDirection()
+    {
+
+        return direction;
     }
 }
