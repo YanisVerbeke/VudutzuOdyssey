@@ -13,13 +13,16 @@ public class PnjController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Panel.gameObject.SetActive(false);
+        if (Panel != null)
+        {
+            Panel.gameObject.SetActive(false);
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
-            if (!String.IsNullOrEmpty(texte))
+            if (myText != null)
             {
                 //myText.text = "";
                 //myText.text = texte;
