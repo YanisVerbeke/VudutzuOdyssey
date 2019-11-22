@@ -25,7 +25,7 @@ public class MenuGame : MonoBehaviour
     void OnCollisionStay2D(Collision2D col)
     {
 
-        if (col.gameObject.name == "Player" )
+        if (col.gameObject.name == "PlayerFight Variant")
         {
             
             Navigation(scene);
@@ -42,7 +42,7 @@ public class MenuGame : MonoBehaviour
     {
         SceneManager.LoadScene(scene);
         this.HeNavigate = true;
-        if (gameObject.name == "Player" && this.HeNavigate == true)
+        if (gameObject.name == "PlayerFight Variant" && this.HeNavigate == true)
         {
             SetTransform(5, 5);
             this.HeNavigate = false;
