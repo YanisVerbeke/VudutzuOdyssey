@@ -40657,6 +40657,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8237835177153299521, guid: c38d98cd420b94f6e897536ad6fd2582,
+        type: 3}
+      propertyPath: Scene
+      value: Village
+      objectReference: {fileID: 0}
     - target: {fileID: 131129698968518234, guid: c38d98cd420b94f6e897536ad6fd2582,
         type: 3}
       propertyPath: enemy
@@ -41750,6 +41755,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e3882e92bdd24804af4dccc0935afdb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  xC: 0
+  yC: 0
+  scene: 
+  yourButton: {fileID: 0}
 --- !u!61 &2120491660
 BoxCollider2D:
   m_ObjectHideFlags: 0
