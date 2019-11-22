@@ -15,7 +15,7 @@ public class MenuGame : MonoBehaviour
 
     public void Start()
     {
-        pos1 = GameObject.FindWithTag("Player").transform.position;
+        pos1 = GameObject.FindWithTag("PlayerFight Variant").transform.position;
         pos1.x = 0;
         pos1.y = 0;
     }
@@ -25,11 +25,11 @@ public class MenuGame : MonoBehaviour
     void OnCollisionStay2D(Collision2D col)
     {
 
-        if (col.gameObject.name == "Player" )
+        if (col.gameObject.name == "PlayerFight Variant")
         {
             
             Navigation(scene);
-            pos1 = GameObject.FindWithTag("Player").transform.position;
+            pos1 = GameObject.FindWithTag("PlayerFight Variant").transform.position;
             pos1.x = 0;
             pos1.y = 0;
             Debug.Log("tedst");

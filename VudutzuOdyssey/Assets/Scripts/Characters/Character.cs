@@ -47,18 +47,5 @@ public class Character : MonoBehaviour
     void Start()
     {
     }
-
-
-     /**
-     * Clone the piece P and set it up in the "futur" for it being tested,
-     * made to avoid moving a piece and putting our own king in check.
-     * @return the new object Piece p.
-     */
-    public Character clone()
-    {
-        Character p = new Character(this.characterName, this.mvtSpeed, this.healthPoint, this.atk);
-        return p;
-    }
-
     
 }
