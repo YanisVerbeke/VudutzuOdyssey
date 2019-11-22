@@ -12,7 +12,7 @@ public class Player : Character
     // Use this for initialization
     void Start()
     {
-        isFighting = false;
+        isFighting = true;
         animator = GetComponent<Animator>();
     }
 
