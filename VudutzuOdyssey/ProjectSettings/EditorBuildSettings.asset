@@ -29,4 +29,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Review.unity
     guid: 2f494a4286ade4672b56fff620fd91f1
+  - enabled: 1
+    path: Assets/Scenes/scDead.unity
+    guid: 17e6017bba13042178ed9bff2bb3c03f
   m_configObjects: {}

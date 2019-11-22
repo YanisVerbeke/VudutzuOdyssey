@@ -21,8 +21,10 @@ public class PnjController : MonoBehaviour
     {
             if (!String.IsNullOrEmpty(texte))
             {
-                myText.text = texte;
-            }
+                //myText.text = "";
+                //myText.text = texte;
+
+        }
     }
     void OnCollisionStay2D(Collision2D col)
     {

@@ -96,6 +96,7 @@ public class CombatController : MonoBehaviour
 
     public void Fight(int mod = 0)
     {
+        Debug.Log("ok");
         chEnemy.dealDamage(chPlayer.atk - mod);
         if (chEnemy.healthPoint <= 0)
         {
