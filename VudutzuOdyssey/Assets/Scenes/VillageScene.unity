@@ -20864,6 +20864,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 145686092}
   m_CullTransparentMesh: 0
+--- !u!114 &342506042 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8237835177153299521, guid: c38d98cd420b94f6e897536ad6fd2582,
+    type: 3}
+  m_PrefabInstance: {fileID: 1188412084}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57b0e278a35534349aa1d9ecef51ad8c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &357456665
 GameObject:
   m_ObjectHideFlags: 0
@@ -40585,15 +40597,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerFight Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 8237835177153299544, guid: c38d98cd420b94f6e897536ad6fd2582,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 8720335034966386161, guid: c38d98cd420b94f6e897536ad6fd2582,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.783
+      value: 20.9
       objectReference: {fileID: 0}
     - target: {fileID: 8720335034966386161, guid: c38d98cd420b94f6e897536ad6fd2582,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.017
+      value: -0.5
       objectReference: {fileID: 0}
     - target: {fileID: 8720335034966386161, guid: c38d98cd420b94f6e897536ad6fd2582,
         type: 3}
@@ -40640,6 +40657,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 131129698968518234, guid: c38d98cd420b94f6e897536ad6fd2582,
+        type: 3}
+      propertyPath: enemy
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 131129698968518234, guid: c38d98cd420b94f6e897536ad6fd2582,
+        type: 3}
+      propertyPath: chPlayer
+      value: 
+      objectReference: {fileID: 342506042}
     - target: {fileID: 2555726927314263109, guid: c38d98cd420b94f6e897536ad6fd2582,
         type: 3}
       propertyPath: m_IsActive
@@ -41720,7 +41747,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2120491658}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1fc5383cc36f34549b0fb26835d15171, type: 3}
+  m_Script: {fileID: 11500000, guid: 1e3882e92bdd24804af4dccc0935afdb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!61 &2120491660

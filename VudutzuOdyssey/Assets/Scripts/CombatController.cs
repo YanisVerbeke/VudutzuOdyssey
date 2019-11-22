@@ -16,10 +16,10 @@ public class CombatController : MonoBehaviour
     private Vector3 playerCoord;
     private Vector3 enemyCoord;
 
-    public GameObject enemy;
+    public GameObject enemy = null;
     public GameObject player;
     public Character chPlayer;
-    public Character chEnemy;
+    public Character chEnemy = null;
     
 
     //private bool isDistance= false;
@@ -55,7 +55,10 @@ public class CombatController : MonoBehaviour
             targetPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             Debug.Log("oué" + Round(player.transform.position));
             playerCoord = Round(player.transform.position);
-            enemyCoord = Round(enemy.transform.position);
+            if (enemy !=null){
+                enemyCoord = Round(enemy.transform.position);
+            }
+            
 
             if (Round(targetPosition).x == enemyCoord.x && Round(targetPosition).y == enemyCoord.y)
             {
