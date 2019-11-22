@@ -99,18 +99,16 @@ public class CombatController : MonoBehaviour
         chEnemy.dealDamage(chPlayer.atk - mod);
         if (chEnemy.healthPoint <= 0)
         {
-            Dead();
+            SceneManager.LoadScene(scene);
+        }
+        else if (chPlayer.healthPoint <= 0)
+        {
+            SceneManager.LoadScene("scDead");
         }
         isCac = false;
         isDistance = false;
     }
 
-    public void Dead()
-    {
-        Debug.Log("mort");
-        SceneManager.LoadScene(scene);
-
-    }
 
     public Vector3 Round(Vector3 target)
     {

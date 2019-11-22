@@ -114658,6 +114658,11 @@ PrefabInstance:
       propertyPath: MaxY
       value: 35
       objectReference: {fileID: 0}
+    - target: {fileID: 4827977482303033872, guid: 91122fde1f0324eba8af851ac8f5704a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 5212382211627676601, guid: 91122fde1f0324eba8af851ac8f5704a,
         type: 3}
       propertyPath: m_LocalPosition.y
@@ -114700,6 +114705,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fc5383cc36f34549b0fb26835d15171, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pos1: {x: 0, y: 0, z: 0}
   scene: VillageScene
   yourButton: {fileID: 0}
 --- !u!61 &2121622145
