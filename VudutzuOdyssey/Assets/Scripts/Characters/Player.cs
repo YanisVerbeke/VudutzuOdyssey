@@ -5,6 +5,7 @@ public class Player : Character
 {
     private Animator animator;
     public Vector2 direction;
+    public string Scene;
 
     public Player(string name, int mvtSpeed, int hp, int atk) : base(name, mvtSpeed, hp, atk)
     {
@@ -12,7 +13,15 @@ public class Player : Character
     // Use this for initialization
     void Start()
     {
-        isFighting = true;
+        if (Scene == "Combat")
+        {
+            isFighting = true;
+
+        }
+        else
+        {
+            isFighting = false;
+        }
         animator = GetComponent<Animator>();
     }
 
