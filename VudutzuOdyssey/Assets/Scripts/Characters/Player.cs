@@ -3,13 +3,17 @@ using System.Collections;
 
 public class Player : Character
 {
+    private Animator animator;
+    public Vector2 direction;
+
     public Player(string name, int mvtSpeed, int hp, int atk) : base(name, mvtSpeed, hp, atk)
     {
     }
     // Use this for initialization
     void Start()
     {
-        //isFighting = true;
+        isFighting = false;
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -19,5 +23,15 @@ public class Player : Character
         {
             PlayerMovement.UserMovement(mvtSpeed, clickAnimation);
         }
+        direction = PlayerMovement.GetDirection();
+        AnimateMovement(direction);
+    }
+
+    public void AnimateMovement(Vector2 direction)
+    {
+        animator.SetLayerWeight(1, 1);
+
+        animator.SetFloat("DirectionX", direction.x);
+        animator.SetFloat("DirectionY", direction.y);
     }
 }
