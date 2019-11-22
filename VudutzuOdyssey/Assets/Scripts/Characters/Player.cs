@@ -9,7 +9,7 @@ public class Player : Character
     // Use this for initialization
     void Start()
     {
-        isFighting = true;
+        //isFighting = true;
     }
 
     // Update is called once per frame
