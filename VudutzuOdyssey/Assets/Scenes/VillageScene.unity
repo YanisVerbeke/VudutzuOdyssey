@@ -40695,21 +40695,6 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8196898699839940363, guid: 0fd3369d797ef4ecf92c20d7184ef2d0,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -311
-      objectReference: {fileID: 0}
-    - target: {fileID: 8196898699839940363, guid: 0fd3369d797ef4ecf92c20d7184ef2d0,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 193
-      objectReference: {fileID: 0}
-    - target: {fileID: 8196898699839940363, guid: 0fd3369d797ef4ecf92c20d7184ef2d0,
-        type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 1448
-      objectReference: {fileID: 0}
     - target: {fileID: 8196898699832922530, guid: 0fd3369d797ef4ecf92c20d7184ef2d0,
         type: 3}
       propertyPath: m_Color.r
@@ -40734,6 +40719,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Panel1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8196898699839940363, guid: 0fd3369d797ef4ecf92c20d7184ef2d0,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -311
+      objectReference: {fileID: 0}
+    - target: {fileID: 8196898699839940363, guid: 0fd3369d797ef4ecf92c20d7184ef2d0,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 193
+      objectReference: {fileID: 0}
+    - target: {fileID: 8196898699839940363, guid: 0fd3369d797ef4ecf92c20d7184ef2d0,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 1448
       objectReference: {fileID: 0}
     - target: {fileID: 8196898699839940363, guid: 0fd3369d797ef4ecf92c20d7184ef2d0,
         type: 3}
@@ -41080,7 +41080,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "Vous \xEAtes le VUDUTZU KING !"
+  m_Text: "Vous \xEAtes le VUDUTZU MASTER !"
 --- !u!222 &1319300850
 CanvasRenderer:
   m_ObjectHideFlags: 0
