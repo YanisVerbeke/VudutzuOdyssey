@@ -4359,7 +4359,7 @@ TilemapRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
-  m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
+  m_ChunkCullingBounds: {x: 0.060000002, y: 0.17500001, z: 0}
   m_MaxChunkCount: 16
   m_MaxFrameAge: 16
   m_SortOrder: 0
@@ -10576,6 +10576,15 @@ Tilemap:
       m_ObjectToInstantiate: {fileID: 0}
       m_TileFlags: 1
       m_ColliderType: 1
+  - first: {x: 56, y: 30, z: 0}
+    second:
+      m_TileIndex: 94
+      m_TileSpriteIndex: 94
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 1
+      m_ColliderType: 1
   - first: {x: 70, y: 30, z: 0}
     second:
       m_TileIndex: 90
@@ -12638,6 +12647,8 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: ae507863b4fbb42dfaccfb0ff9777e46, type: 2}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: 4c2e25033c1714d2683127691e124b80, type: 2}
+  - m_RefCount: 1
+    m_Data: {fileID: 11400000, guid: dfe52e7c6e3344c1c98e63a73e47629b, type: 2}
   m_TileSpriteArray:
   - m_RefCount: 1
     m_Data: {fileID: 1481798771639462456, guid: b8c29737515c344ffafd8b93d3688d5b,
@@ -12919,8 +12930,10 @@ Tilemap:
   - m_RefCount: 1
     m_Data: {fileID: 2361181909404325933, guid: 304be5f92087c4f889941ae047565271,
       type: 3}
+  - m_RefCount: 1
+    m_Data: {fileID: 21300000, guid: e5955d1efa16141b4a85877625dd240d, type: 3}
   m_TileMatrixArray:
-  - m_RefCount: 897
+  - m_RefCount: 898
     m_Data:
       e00: 1
       e01: 0
@@ -12939,7 +12952,7 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
-  - m_RefCount: 897
+  - m_RefCount: 898
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_AnimationFrameRate: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -13074,6 +13087,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8720335034966386161, guid: c38d98cd420b94f6e897536ad6fd2582,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8720335034966386161, guid: c38d98cd420b94f6e897536ad6fd2582,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8237835177153299521, guid: c38d98cd420b94f6e897536ad6fd2582,
         type: 3}
       propertyPath: Scene
@@ -13152,6 +13175,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208693862367256584, guid: a49f33813c1424593abef0b30cf0d536,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208693862367256584, guid: a49f33813c1424593abef0b30cf0d536,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 9208693862367256598, guid: a49f33813c1424593abef0b30cf0d536,
         type: 3}
