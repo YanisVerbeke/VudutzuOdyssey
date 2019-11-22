@@ -53,15 +53,17 @@ public class CombatController : MonoBehaviour
 
             //Debug.Log(isCac + " l'attaque " + attaque);
             targetPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            Debug.Log("oué" + Round(player.transform.position));
             playerCoord = Round(player.transform.position);
             enemyCoord = Round(enemy.transform.position);
 
             if (Round(targetPosition).x == enemyCoord.x && Round(targetPosition).y == enemyCoord.y)
             {
-
+                //Debug.Log("curseur");
                 if (CheckRange(1) && isCac == true)
                 {
-                        Fight();
+                    Debug.Log("touché");
+                    Fight();
                     
                 }else if (CheckRange(3) && isDistance == true)
                 {
@@ -78,6 +80,7 @@ public class CombatController : MonoBehaviour
 
     public bool CheckRange(int valueRange)
     {
+        Debug.Log("curseur");
         if (playerCoord.x - valueRange <= enemyCoord.x  ||
             playerCoord.x + valueRange >= enemyCoord.x  ||
             playerCoord.y + valueRange >= enemyCoord.y  ||

@@ -75,8 +75,8 @@ public static class PlayerMovement
                 clickAnimation.transform.position = Vector3.MoveTowards(clickAnimation.transform.position, targetPosition, speed * Time.deltaTime);
             }
         }
-        Debug.Log("1 : " + targetPosition);
-        Debug.Log("2 : " + clickAnimation.transform.position);
+  //      Debug.Log("1 : " + targetPosition);
+//        Debug.Log("2 : " + clickAnimation.transform.position);
         //Quand le personnage atteint la position voulue, isMoving repasse à false
         if (clickAnimation != null)
         {
